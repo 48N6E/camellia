@@ -5,7 +5,7 @@ nameOverride: ""
 fullnameOverride: ""
 camellia:
   image:
-    name: "docker-registry-local.ecouser.net/ops/camellia:1.4.0-jdk-21-0.0.1"
+    name: "48n6e/camellia-redis-proxy:1.4.0-jdk-21-0.0.1"
     pullPolicy: "IfNotPresent"
   replicas: 2
   resources:
@@ -25,7 +25,7 @@ camellia:
   affinity: {} 
 redis: 
   image:
-    name: "docker-registry.ecouser.net/library/redis:5.0"
+    name: "redis:5.0"
     # -- Pull policy for the Redis image
     pullPolicy: "IfNotPresent"
   config:

@@ -86,6 +86,7 @@ redis:
 执行安装：
 
 ```bash
+helm repo add camellia-redis-proxy https://48n6e.github.io/camellia/
 helm install camellia-proxy ./camellia-redis-proxy -n camellia -f my-values.yaml
 ```
 

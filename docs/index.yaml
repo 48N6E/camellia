@@ -11,6 +11,6 @@ entries:
     sources:
     - https://48n6e.github.io/camellia
     urls:
-    - camellia-redis-proxy-1.4.0.tgz
+    - https://48n6e.github.io/camellia/camellia-redis-proxy-1.4.0.tgz
     version: 1.4.0
 generated: "2026-02-28T23:32:55.814692+08:00"
