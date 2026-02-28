@@ -51,10 +51,10 @@ kubectl get svc -n camellia
 | 参数 | 说明 | 默认值 |
 |------|------|--------|
 | `camellia.replicas` | Camellia 代理副本数 | `2` |
-| `camellia.image.name` | Camellia 镜像 | `docker-registry-local.ecouser.net/ops/camellia:1.4.0-jdk-21-0.0.1` |
+| `camellia.image.name` | Camellia 镜像 | `48n6e/camellia-redis-proxy:1.4.0-jdk-21-0.0.1` |
 | `camellia.image.pullPolicy` | 镜像拉取策略 | `IfNotPresent` |
 | `camellia.resources` | 代理资源限制与请求 | 见 values.yaml |
-| `redis.image.name` | Redis 镜像 | `docker-registry.ecouser.net/library/redis:5.0` |
+| `redis.image.name` | Redis 镜像 | `redis:5.0` |
 | `redis.persistence.enabled` | 是否启用 Redis 持久化 | `false` |
 | `redis.persistence.size` | Redis 存储大小 | `1Gi` |
 
