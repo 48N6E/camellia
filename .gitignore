@@ -33,3 +33,4 @@ compressed/
 
 *.flattened-pom.xml
 .idea/
+.*
