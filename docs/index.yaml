@@ -3,7 +3,7 @@ entries:
   camellia-redis-proxy:
   - apiVersion: v2
     created: "2026-02-28T23:32:55.8152126+08:00"
-    description: camellia-redis-proxy是一款高性能的redis代理，使用netty4开发，最低要求java21
+    description: A high-performance Redis proxy built with Netty4, requires Java 21 or later
     digest: fcc4821b0b89b447551a0ecae2d520840056fcede405bda07682997b0a7f3b61
     maintainers:
     - name: 48n6e
