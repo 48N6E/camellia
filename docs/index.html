@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camellia Helm Charts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0f1419;
+        --surface: #1a2332;
+        --border: #2d3a4f;
+        --text: #e6edf3;
+        --text-muted: #8b949e;
+        --accent: #58a6ff;
+        --accent-dim: #388bfd66;
+        --green: #3fb950;
+        --radius: 8px;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Noto Sans SC", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
+      main {
+        max-width: 640px;
+        width: 100%;
+      }
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem;
+        letter-spacing: -0.02em;
+      }
+      .subtitle {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 1.25rem;
+      }
+      .card h2 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--text-muted);
+        margin: 0 0 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      code, .block {
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 0.85rem;
+      }
+      .block {
+        display: block;
+        background: #0d1117;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1rem 1.25rem;
+        overflow-x: auto;
+        white-space: pre;
+        color: #c9d1d9;
+      }
+      .block .comment { color: var(--text-muted); }
+      .block .cmd { color: var(--accent); }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover { text-decoration: underline; }
+      .chart-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--accent-dim);
+        color: var(--accent);
+        padding: 0.35rem 0.75rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+      .chart-badge strong { font-weight: 500; }
+      footer {
+        margin-top: 2.5rem;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+      }
+      footer a { color: var(--text-muted); }
+      footer a:hover { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Camellia Helm Charts</h1>
+      <p class="subtitle">基于 Netty4 的高性能 Redis 代理 · 使用 Helm 部署到 Kubernetes</p>
+
+      <div class="chart-badge">
+        <strong>camellia-redis-proxy</strong>
+        <span>v1.4.0</span>
+      </div>
+
+      <section class="card">
+        <h2>添加仓库</h2>
+        <code class="block"><span class="cmd">helm repo add</span> camellia https://48n6e.github.io/camellia
+<span class="cmd">helm repo update</span></code>
+      </section>
+
+      <section class="card">
+        <h2>安装 Chart</h2>
+        <code class="block"><span class="cmd">helm install</span> camellia-proxy camellia/camellia-redis-proxy -n camellia --create-namespace</code>
+      </section>
+
+      <p style="color: var(--text-muted); font-size: 0.9rem;">
+        Chart 索引：<a href="index.yaml">index.yaml</a>
+        · 项目：<a href="https://github.com/netease-im/camellia" target="_blank" rel="noopener">netease-im/camellia</a>
+      </p>
+
+      <footer>
+        <a href="https://github.com/48n6e/camellia" target="_blank" rel="noopener">GitHub</a>
+        · Helm 3.x · Kubernetes 1.19+
+      </footer>
+    </main>
+  </body>
+</html>

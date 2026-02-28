@@ -9,7 +9,7 @@ entries:
     - name: 48n6e
     name: camellia-redis-proxy
     sources:
-    - https://github.com/lsst-sqre/charts/tree/main/charts/redis
+    - https://48n6e.github.io/camellia
     urls:
     - camellia-redis-proxy-1.4.0.tgz
     version: 1.4.0
